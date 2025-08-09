@@ -27,9 +27,9 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - '&semi_colon'
+  - '&qdq'
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - Z
   - X
   - C
@@ -39,10 +39,10 @@ layers:
   - $$mdi:arrow-down-bold$$
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - '&comma'
+  - '&period'
+  - '&slash'
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-return$$', h: lower}
@@ -158,8 +158,8 @@ layers:
   - ^
   - '&'
   - '*'
-  - '&td0'
-  - '&td1'
+  - '&pLeft'
+  - '&pRight'
   - $$mdi:progress-download$$
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
