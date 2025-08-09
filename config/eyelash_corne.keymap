@@ -61,7 +61,7 @@
         lower {
             display-name = "lower";
             bindings = <
-&kp GRAVE     &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans                            &mmv MOVE_UP                     &kp HOME   &trans          &kp UP_ARROW    &trans     &kp PAGE_UP  &kp BSPC
+&kp GRAVE     &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans                            &mmv MOVE_UP                     &kp HOME   &trans          &kp UP_ARROW    &trans     &kp PAGE_UP  &trans
 &kp INT1      &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp END    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PG_DN    &kp UNDERSCORE
 &kp CAPSLOCK  &trans  &trans          &trans          &trans           &trans  &trans                    &mmv MOVE_DOWN                   &kp EQUAL  &trans          &trans          &trans     &kp PIPE     &trans
                                       &trans          &trans           &trans                                                             &trans     &trans          &trans
@@ -71,9 +71,9 @@
         raise {
             display-name = "raise";
             bindings = <
-&trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &mmv MOVE_UP                     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp DEL
-&kp INT2    &trans        &trans        &trans        &trans        &kp EQUAL               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp UNDERSCORE  &kp INS
-&caps_word  &trans        &trans        &none         &trans        &trans        &trans                    &mmv MOVE_DOWN                   &kp MINUS     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PIPE        &kp TILDE
+&kp TILDE   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &mmv MOVE_UP                     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp DEL
+&kp INT2    &trans        &trans        &trans        &trans        &trans                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp UNDERSCORE  &kp INS
+&caps_word  &trans        &trans        &none         &trans        &trans        &trans                    &mmv MOVE_DOWN                   &kp MINUS     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BSLH        &trans
                                         &trans        &trans        &trans                                                                   &trans        &trans        &trans
             >;
         };
