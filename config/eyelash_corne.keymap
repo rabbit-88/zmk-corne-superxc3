@@ -23,11 +23,26 @@
 
 / {
     behaviors {
-        td0: td0 {
+        td1: td1 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings =
+                <&kp RIGHT_PARENTHESIS>,
+                <&kp RIGHT_BRACKET>,
+                <&kp RIGHT_BRACE>;
+
+            label = ")]}";
+        };
+
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "([{";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_PARENTHESIS>,
+                <&kp LEFT_BRACKET>,
+                <&kp LEFT_BRACE>;
         };
     };
 
@@ -81,7 +96,7 @@
         ADJ {
             display-name = "ADJ";
             bindings = <
-&bootloader      &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                            &mmv MOVE_UP                     &kp CARET    &kp AMPERSAND  &kp ASTERISK  &kp LPAR    &kp RPAR        &bootloader
+&bootloader      &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                            &mmv MOVE_UP                     &kp CARET    &kp AMPERSAND  &kp ASTERISK  &td0        &td1            &bootloader
 &kp PAUSE_BREAK  &trans           &trans       &trans    &trans      &trans                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK      &mkp MCLK     &mkp RCLK   &trans          &trans
 &to 4            &trans           &trans       &trans    &trans      &trans       &trans                    &mmv MOVE_DOWN                   &trans       &trans         &bootloader   &sys_reset  &kp SCROLLLOCK  &kp PAUSE_BREAK
                                                &trans    &trans      &trans                                                                  &trans       &trans         &trans
