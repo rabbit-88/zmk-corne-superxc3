@@ -3,7 +3,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -67,20 +66,16 @@
 &trans     &trans  &trans          &trans          &trans           &trans  &trans                    &mmv MOVE_DOWN                   &kp EQUAL  &trans          &trans          &trans     &kp PIPE     &trans
                                    &trans          &trans           &trans                                                             &trans     &trans          &trans
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &mmv MOVE_UP                     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp DEL
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK     &mkp RCLK     &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp UNDERSCORE  &kp INS
-&trans  &out OUT_USB  &out OUT_BLE  &none         &none         &mkp MB5      &trans                    &mmv MOVE_DOWN                   &kp MINUS     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PIPE        &kp TILDE
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK     &mkp RCLK     &kp EQUAL               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp UNDERSCORE  &kp INS
+&trans  &trans        &trans        &none         &none         &trans        &trans                    &mmv MOVE_DOWN                   &kp MINUS     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PIPE        &kp TILDE
                                     &trans        &trans        &trans                                                                   &trans        &trans        &trans
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_4 {
@@ -91,8 +86,6 @@
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD       &kp END                &kp PG_DN
                                          &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         ADJ {
